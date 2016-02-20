@@ -21,6 +21,7 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <script src="js/jquery.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,7 +29,42 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script>
+        var deadline = 'April 2 2016 08:00:00 GMT-03:00';
 
+        function getTimeRemaining(endtime){
+            var t = Date.parse(endtime) - Date.parse(new Date());
+            var seconds = Math.floor( (t/1000) % 60 );
+            var minutes = Math.floor( (t/1000/60) % 60 );
+            var hours = Math.floor( (t/(1000*60*60)) % 24 );
+            var days = Math.floor( t/(1000*60*60*24) );
+            return {
+                'total': t,
+                'days': days,
+                'hours': hours,
+                'minutes': minutes,
+                'seconds': seconds
+            };
+        }
+
+        function initializeClock(endtime){
+            function updateClock(){
+                var t = getTimeRemaining(endtime);
+                document.getElementById("dias").innerHTML =  t.days;
+                document.getElementById("horas").innerHTML =  t.hours;
+                document.getElementById("min").innerHTML =  t.minutes;
+                document.getElementById("seg").innerHTML =  t.seconds;
+                if(t.total<=0){
+                    clearInterval(timeinterval);
+                }
+            }
+
+            updateClock(); // run function once at first to avoid delay
+            var timeinterval = setInterval(updateClock,1000);
+        }
+
+        $(document).ready(function(){initializeClock(deadline)});
+    </script>
 </head>
 
 <body id="page-top" class="index">
@@ -77,19 +113,19 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center countdown">
                     <div class="nbox col-lg-2 col-lg-offset-2 text-center">
-                        <span class="n">40</span>
+                        <span class="n" id="dias">40</span>
                         <span class="l">Dias</span>
                     </div>
                     <div class="nbox col-lg-2">
-                        <span class="n">23</span>
+                        <span class="n" id="horas">2</span>
                         <span class="l">Horas</span>
                     </div>
                     <div class="nbox col-lg-2">
-                        <span class="n">52</span>
+                        <span class="n" id="min">52</span>
                         <span class="l">Min</span>
                     </div>
                     <div class="nbox col-lg-2">
-                        <span class="n">17</span>
+                        <span class="n" id="seg">17</span>
                         <span class="l">Seg</span>
                     </div>
                 </div>
@@ -103,7 +139,6 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive img-circle" src="img/pic.png" alt="">
                     <div class="intro-text">
                         <span class="name">ARDUINO DAY #GIM</span>
                         <span class="skills">Palestras - Oficinas - Coisas</span>
