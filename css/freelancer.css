@@ -102,17 +102,16 @@ header img {
 }
 
 header .intro-text .name {
-    margin-top: 50px;
     display: block;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 700;
     color: #00919a;
 }
 
 header .intro-text .skills {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 600;
     color: #ff710d;
 }
@@ -544,30 +543,14 @@ footer .footer-below {
 }
 
 .l {
-    padding-left: 10px;
-    padding-right: 10px;
     background-color: #ffc60a;
     font-size: 2em;
 }
 
 .clabel {
-    min-width: 80px;
+    margin-top: 25px;
     background-color: #9e8162;
     font-size: 2em;
-}
-
-@media(max-width:400px) {
-    .n {
-        font-size: 2em;
-    }
-
-    .l {
-        font-size: 1em;
-    }
-
-    .clabel {
-        font-size: 1em;
-    }
 }
 
 .countdown > div {
