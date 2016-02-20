@@ -556,7 +556,7 @@ footer .footer-below {
     font-size: 2em;
 }
 
-@media(min-width:400px) {
+@media(max-width:400px) {
     .n {
         font-size: 3em;
     }
