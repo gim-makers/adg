@@ -538,15 +538,15 @@ footer .footer-below {
 
 .n {
     color: #ffc60a;
+    font-size: 4em;
+    font-weight: 500;
 }
 
 .l {
-    padding-left: 10px;
-    padding-right: 10px; 
     background-color: #ffc60a;
+    font-size: 2em;
 }
 
 .countdown > div {
     display: inline-block;
-    margin-right: 10px;
 }
