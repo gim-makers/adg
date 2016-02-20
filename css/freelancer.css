@@ -118,7 +118,7 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     header .container {
-        padding-top: 200px;
+        padding-top: 100px;
         padding-bottom: 100px;
     }
 
@@ -530,4 +530,23 @@ footer .footer-below {
 .btn-dark:active {
     color: #fff;
     background-color: #00676d;
+}
+
+.nbox > span {
+    display: block;
+}
+
+.n {
+    color: #ffc60a;
+}
+
+.l {
+    padding-left: 10px;
+    padding-right: 10px; 
+    background-color: #ffc60a;
+}
+
+.countdown > div {
+    display: inline-block;
+    margin-right: 10px;
 }
