@@ -547,6 +547,12 @@ footer .footer-below {
     font-size: 2em;
 }
 
+.clabel {
+    margin-top: 25px;
+    background-color: #9e8162;
+    font-size: 2em;
+}
+
 .countdown > div {
     display: inline-block;
 }
