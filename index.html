@@ -50,10 +50,10 @@
         function initializeClock(endtime){
             function updateClock(){
                 var t = getTimeRemaining(endtime);
-                document.getElementById("dias").innerHTML =  t.days;
-                document.getElementById("horas").innerHTML =  t.hours;
-                document.getElementById("min").innerHTML =  t.minutes;
-                document.getElementById("seg").innerHTML =  t.seconds;
+                document.getElementById("dias").innerHTML =  ('\u00A0' + t.days).slice(-2);
+                document.getElementById("horas").innerHTML =  ('\u00A0' + t.hours).slice(-2);
+                document.getElementById("min").innerHTML =  ('\u00A0' + t.minutes).slice(-2);
+                document.getElementById("seg").innerHTML =  ('\u00A0' + t.seconds).slice(-2);
                 if(t.total<=0){
                     clearInterval(timeinterval);
                 }
