@@ -545,6 +545,8 @@ footer .footer-below {
 .l {
     background-color: #ffc60a;
     font-size: 2em;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .clabel {
@@ -556,4 +558,13 @@ footer .footer-below {
 
 .countdown > div {
     display: inline-block;
+}
+
+@media (max-width:450px){
+    .l, .clabel {
+        font-size: 1.5em;
+        }
+    .n {
+        font-size: 3em;
+    }
 }
