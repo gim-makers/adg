@@ -557,23 +557,3 @@ footer .footer-below {
 .countdown > div {
     display: inline-block;
 }
-
-@media(max-width:400px) {
-    .n {
-        color: #ffc60a;
-        font-size: 3em;
-        font-weight: 500;
-    }
-
-    .l {
-        background-color: #ffc60a;
-        font-size: 1.5em;
-    }
-
-    .clabel {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        background-color: #9e8162;
-        font-size: 1.5em;
-    }
-}
