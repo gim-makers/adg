@@ -569,3 +569,13 @@ footer .footer-below {
         font-size: 3em;
     }
 }
+
+@media (max-width: 767px) {
+  .col-sm-3 {
+    width: 20%;
+  }
+  .sponsor, .sponsor > div {
+    text-align: center;
+    display: inline-block;
+  }
+}
