@@ -571,8 +571,8 @@ footer .footer-below {
 }
 
 @media (max-width: 767px) {
-  .col-sm-3 {
-    width: 20%;
+  .col-sm-6 {
+    width: 40%;
   }
   .sponsor, .sponsor > div {
     text-align: center;
