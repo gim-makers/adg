@@ -48,8 +48,11 @@
   position: relative;
   border-top: solid;
   text-align: center;
-  font-size: 1.25em;
+  font-size: 4.5vmin;
   font-weight: 500;
+}
+.timeline-event-date.local {
+  padding: 0px;
 }
 
 .aud {
@@ -69,7 +72,7 @@
 
 span.local{
   display: block;
-  font-size: 3vmin;
+  font-size: 4vmin;
   font-weight: 500;
   padding: 0px;
 }
@@ -117,7 +120,7 @@ span.local{
   background: #59c8ce;
   padding: 1em;
   box-sizing: border-box;
-  border-top: 2px solid rgba(0, 0, 0, .3);
+  border-top: 2px solid rgba(0, 0, 0, .2);
 }
 .timeline-event-description:empty {
   display: none;
@@ -148,7 +151,7 @@ span.local{
   display: block;
   width: 100%;
   overflow: hidden;
-  font-size: 1.5vmin;
+  font-size: 2vmin;
 }
 .timeline-event[data-category=""] .timeline-event-date {
   display: block;
@@ -156,6 +159,24 @@ span.local{
   text-align: center;
   font-weight: 900;
 }
+
+@media (min-width: 500px){
+  span.local {
+    font-size: 3vmin;
+  }
+  .timeline-event[data-category=""] .timeline-event-date {
+    font-size: 2.5em;
+  }
+  .timeline-event-date {
+    font-size: 3vmin;
+  }
+}
+@media (min-width: 800px){
+  .timeline-event-date {
+    font-size: 3vmin;
+  }
+}
+
 .timeline-event[data-category=""] .timeline-event-date::before {
   display: none;
 }
