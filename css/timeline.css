@@ -18,26 +18,6 @@
   max-width: 60em;
 }
 
-.timeline-heading, .timeline-subheading {
-  background: #ddd;
-  font-size: 3em;
-  padding: 1em;
-  text-align: center;
-  margin: 0;
-  font-weight: 100;
-}
-@media (max-width: 20em) {
-  .timeline-heading, .timeline-subheading {
-    font-size: 1.5em;
-  }
-}
-
-.timeline-subheading {
-  font-size: 1.5em;
-  font-weight: 400;
-  margin: 0;
-}
-
 .timeline-event {
   list-style-type: none;
   width: 50%;
@@ -46,6 +26,7 @@
 .timeline-event {
   display: inline-block;
   margin: -4px;
+  margin-left: 1px;
   padding: 0px 1.5em 0px 1.5em;
   width: 50%;
   vertical-align: middle;
@@ -54,6 +35,7 @@
 .timeline-event.aud {
   padding-top: 0px;
   padding-bottom: 0px;
+  width: 50%;
   text-align: center;
 }
 
@@ -64,12 +46,6 @@
 
 .timeline-event.bottom{
   padding-bottom: 0px;
-}
-
-@media (max-width: 30em) {
-  .timeline-event {
-    width: 100%;
-  }
 }
 
 .timeline-event-date {
@@ -127,7 +103,6 @@
 .timeline-event-description {
   background: #59c8ce;
   padding: 1em;
-  border-top: solid;
 }
 .timeline-event-description:empty {
   display: none;
@@ -154,6 +129,7 @@
   display: block;
   width: 100%;
   overflow: hidden;
+  font-size: 1vmax;
 }
 .timeline-event[data-category=""] .timeline-event-date {
   display: block;
@@ -163,11 +139,6 @@
 }
 .timeline-event[data-category=""] .timeline-event-date::before {
   display: none;
-}
-@media (max-width: 20em) {
-  .timeline-event[data-category=""] .timeline-event-date {
-    font-size: 1.5em;
-  }
 }
 
 .timeline-top-link {
