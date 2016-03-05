@@ -200,7 +200,10 @@ section.success {
 }
 
 section.sponsor {
-    color: #00919a;
+    color: #FFF;
+}
+h2.sponsor{
+    color: #59c8ce;
 }
 
 section.local {
