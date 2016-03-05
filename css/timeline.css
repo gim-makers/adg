@@ -20,7 +20,7 @@
 
 .timeline-heading, .timeline-subheading {
   background: #ddd;
-  font-size: 4em;
+  font-size: 3em;
   padding: 1em;
   text-align: center;
   margin: 0;
@@ -28,7 +28,7 @@
 }
 @media (max-width: 20em) {
   .timeline-heading, .timeline-subheading {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
 
@@ -46,19 +46,14 @@
 .timeline-event {
   display: inline-block;
   margin: -4px;
-  margin-left: 1px;
   padding: 0px 1.5em 0px 1.5em;
   width: 50%;
   vertical-align: middle;
 }
 
 .timeline-event.aud {
-  display: inline-block;
-  margin: -4px;
   padding-top: 0px;
   padding-bottom: 0px;
-  width: 50%;
-  vertical-align: middle;
   text-align: center;
 }
 
