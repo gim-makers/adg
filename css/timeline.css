@@ -42,6 +42,10 @@
   padding-bottom: 0px;
 }
 
+.timeline-event.mid{
+  padding-top: 1.5em;
+}
+
 .timeline-event-date {
   background: #00919a;
   padding: .5em;
@@ -68,6 +72,10 @@
   background: #00919a;
   padding: .25em .5em .25em .5em;
   position: relative;
+}
+
+.timeline-event-date.big.almoco {
+  background: #ff6e0d;
 }
 
 span.local{
