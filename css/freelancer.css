@@ -4,6 +4,23 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+@keyframes aniOne {
+    from {
+        background-position: 0 -125px, 100% 135%, 0 0;
+    }
+    to {
+        background-position: 0 145%, 100% -35%, 112px 112px;
+    }
+}
+@keyframes aniTwo {
+    from {
+        background-position: 100px -125px, calc(100% - 100px) 135%, 0 0;
+    }
+    to {
+        background-position: 100px 145%, calc(100% - 100px) -35%, 112px 112px;
+    }
+}
+
 body {
     overflow-x: hidden;
 }
@@ -84,22 +101,34 @@ hr.star-primary:after {
     margin: 0 auto;
 }
 
+.head {
+    overflow: hidden;
+}
+
 header {
     text-align: center;
     color: #fff;
     background: #fff;
-    background-image: url("../img/adbg.svg");
-    background-repeat: repeat;
+    background-image: url("../img/gdg1.png"), url("../img/gdg2.png"), url("../img/adbg.svg");
+    background-position: left top, right bottom, center bottom;
+    background-repeat: no-repeat, no-repeat, repeat;
+
+    -webkit-animation: aniOne 8s steps(6000) infinite;
+    animation-direction:  alternate-reverse,  alternate-reverse,  normal;
+}
+
+@media(min-width: 1300px){
+    header {
+        background-position: 100px top, 100% bottom, center bottom;
+
+        -webkit-animation: aniTwo 8s steps(6000) infinite;
+        animation-direction:  alternate-reverse,  alternate-reverse,  normal;
+    }
 }
 
 header .container {
     padding-top: 100px;
     padding-bottom: 50px;
-}
-
-header img {
-    display: block;
-    margin: 0 auto 20px;
 }
 
 header .intro-text .name {
@@ -199,8 +228,14 @@ section.success {
     background: #59c8ce;
 }
 
+section.tl {
+    color: #FFF;
+}
 section.sponsor {
     color: #00919a;
+}
+h2.sponsor{
+    color: #59c8ce;
 }
 
 section.local {
@@ -229,6 +264,15 @@ section.success a.active {
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
+}
+
+.sponsor-img {
+
+}
+
+.sponsor-box {
+    display: inline-block;
+    padding: 1em;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -573,6 +617,9 @@ footer .footer-below {
 @media (max-width: 767px) {
   .col-sm-6 {
     width: 40%;
+  }
+  .col-sm-3 {
+    width: 25%;
   }
   .sponsor, .sponsor > div {
     text-align: center;

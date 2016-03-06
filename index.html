@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
+    <link href="css/timeline.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -112,39 +113,39 @@
 
     <!-- Header -->
     <header>
-        <div class="container sqr">
-            <div class="row countdown">
-                <div class="nbox col-lg-2 col-lg-offset-2 text-center">
-                    <span class="n" id="dias">0</span>
-                    <span class="l">Dias</span>
+            <div class="container">
+                <div class="row countdown">
+                    <div class="nbox col-lg-2 col-lg-offset-2 text-center">
+                        <span class="n" id="dias">0</span>
+                        <span class="l">Dias</span>
+                    </div>
+                    <div class="nbox col-lg-2">
+                        <span class="n" id="horas">0</span>
+                        <span class="l">Horas</span>
+                    </div>
+                    <div class="nbox col-lg-2">
+                        <span class="n" id="min">0</span>
+                        <span class="l">Min</span>
+                    </div>
+                    <div class="nbox col-lg-2">
+                        <span class="n" id="seg">0</span>
+                        <span class="l">Seg</span>
+                    </div>
                 </div>
-                <div class="nbox col-lg-2">
-                    <span class="n" id="horas">0</span>
-                    <span class="l">Horas</span>
+                <div class="row">
+                    <div class="nbox col-lg-8 col-lg-offset-2 text-center countdown">
+                        <span class="clabel">Sábado, 2 de abril às 8:00</span>
+                    </div>
                 </div>
-                <div class="nbox col-lg-2">
-                    <span class="n" id="min">0</span>
-                    <span class="l">Min</span>
-                </div>
-                <div class="nbox col-lg-2">
-                    <span class="n" id="seg">0</span>
-                    <span class="l">Seg</span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="nbox col-lg-8 col-lg-offset-2 text-center countdown">
-                    <span class="clabel">Sábado, 2 de abril às 8:00</span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-text">
-                        <span class="name">ARDUINO DAY 2016 #GIM</span>
-                        <span class="skills">Palestras - Oficinas - Mesas redondas - Competição </span>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="intro-text">
+                            <span class="name">ARDUINO DAY 2016 #GIM</span>
+                            <span class="skills">Palestras - Oficinas - Mesas redondas - Competição </span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </header>
 
     <!-- About Section -->
@@ -169,21 +170,86 @@
         </div>
     </section>
     
-     <section class="sponsor" id="programacao">
+     <section class="tl" id="programacao">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Programação</h2>
+                <div class='timeline' id='top'>
+                  <li class='timeline-event top' data-category=''>
+                    <div class='timeline-event-date big'>
+                        08:00 - ABERTURA
+                        <span class="local">
+                            Anfiteatro D
+                        </span>
+                    </div>
+                    <img class='timeline-event-img' src=''>
+                    <div class='timeline-event-description'></div>
+                  </li>
+                  <li class='timeline-event' data-category='time'>
+                    <div class='timeline-event-date big'>
+                        <div pan class="time">09:00</div>
+                    </div>
+                  </li>
+                  <li class='timeline-event' data-category='personal'>
+                    <img class='timeline-event-img' src=''>
+                    <div class="timeline-event-date local">Anfiteatro D</div>
+                    <div class='timeline-event-description'>I created a timeline.</div>
+                  </li>
+                  <li class='timeline-event' data-category='personal'>
+                    <img class='timeline-event-img' src=''>
+                    <div class="timeline-event-date local">Anfiteatro F</div>
+                    <div class='timeline-event-description'>I created a timeline.</div>
+                  </li>
+                  <li class='timeline-event' data-category='personal'>
+                    <img class='timeline-event-img' src=''>
+                    <div class='timeline-event-description'>I created a timeline.</div>
+                  </li>
+                  <li class='timeline-event' data-category='personal'>
+                    <img class='timeline-event-img' src=''>
+                    <div class='timeline-event-description'>I created a timeline.</div>
+                  </li>
+                  <li class='timeline-event' data-category='oficina'>
+                    <img class='timeline-event-img' src=''>
+                    <div class="timeline-event-date local">Sala 2</div>
+                    <div class='timeline-event-description'>I created a timeline.</div>
+                  </li>
+                  <li class='timeline-event' data-category='oficina'>
+                    <img class='timeline-event-img' src=''>
+                    <div class="timeline-event-date local">Sala 3</div>
+                    <div class='timeline-event-description'>I created a timeline.</div>
+                  </li>
+                  <li class='timeline-event' data-category='time'>
+                    <div class='timeline-event-date big'>
+                        <div pan class="time">10:00</div>
+                    </div>
+                  </li>
+                  <li class='timeline-event' data-category='personal'>
+                    <img class='timeline-event-img' src=''>
+                    <div class="timeline-event-date">Anfiteatro D</div>
+                    <div class='timeline-event-description'>I created a timeline.</div>
+                  </li>
+                  <li class='timeline-event' data-category='personal'>
+                    <img class='timeline-event-img' src=''>
+                    <div class="timeline-event-date">Anfiteatro F</div>
+                    <div class='timeline-event-description'>I created a timeline.</div>
+                  </li>
+                  <li class='timeline-event' data-category='personal'>
+                    <img class='timeline-event-img' src=''>
+                    <div class='timeline-event-description'>I created a timeline.</div>
+                  </li>
+                  <li class='timeline-event' data-category='personal'>
+                    <img class='timeline-event-img' src=''>
+                    <div class='timeline-event-description'>I created a timeline.</div>
+                  </li>
+                  <li class='timeline-event bottom' data-category=''>
+                    <div class='timeline-event-date big'>
+                        18:00 - ENCERRAMENTO
+                        <span class="local">
+                            Anfiteatro D
+                        </span>
+                    </div>
+                    <img class='timeline-event-img' src=''>
+                    <div class='timeline-event-description'></div>
+                  </li>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Teste Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-             
-        </div>
     </section>
     
     <section class="success" id="palestrantes">
@@ -210,18 +276,18 @@
                     <h2>Patrocínio</h2>
                 </div>
             </div>
-            <div class="row sponsor">
-                <div class="col-sm-6 portfolio-item">
-                    <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
+            <div style="text-align:center;">
+                <div class="sponsor-box">
+                    <img src="img/sponsor/1.jpg" class="sponsor-img" alt="">
                 </div>
-                <div class="col-sm-6 portfolio-item">
-                    <img src="img/portfolio/cake.png" class="img-responsive" alt="">
+                <div class="sponsor-box">
+                    <img src="img/sponsor/1.jpg" class="sponsor-img" alt="">
                 </div>
-                <div class="col-sm-6 portfolio-item">
-                    <img src="img/portfolio/circus.png" class="img-responsive" alt="">
+                <div class="sponsor-box">
+                    <img src="img/sponsor/1.jpg" class="sponsor-img" alt="">
                 </div>
-                <div class="col-sm-6 portfolio-item">
-                    <img src="img/portfolio/game.png" class="img-responsive" alt="">
+                <div class="sponsor-box">
+                    <img src="img/sponsor/1.jpg" class="sponsor-img" alt="">
                 </div>
             </div>
         </div>
