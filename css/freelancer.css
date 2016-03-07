@@ -32,11 +32,21 @@ body {
 }
 
 p {
+    text-align: justify;
     font-size: 20px;
 }
 
 p.small {
+    text-align: justify;
     font-size: 16px;
+}
+
+#local p {
+    text-align: center;
+}
+
+b {
+    font-size: 1.25em;
 }
 
 a,
@@ -285,13 +295,14 @@ section.success a.active {
     margin: 0 0 15px;
 }
 
-.sponsor-img {
-
-}
-
 .sponsor-box {
     display: inline-block;
     padding: 1em;
+}
+
+.sponsor-box div {
+    position: absolute;
+    display: block;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -567,6 +578,10 @@ footer .footer-below {
 
 .img-circle {
     width: 256px;
+}
+
+.pal-img {
+    width: 200px;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
