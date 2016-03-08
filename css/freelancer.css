@@ -576,12 +576,32 @@ footer .footer-below {
   height: 55px;
 }
 
-.img-circle {
-    width: 256px;
+.pal-box {
+    position: relative;
+    display: inline-block;
+    margin: 1em;
 }
 
 .pal-img {
     width: 200px;
+}
+
+.cropper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.pal-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #00919a;
+    font-size: 1.5em;
+    font-weight: 700;
+    background-color: #FFF;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
@@ -664,5 +684,11 @@ footer .footer-below {
 @media (max-width: 590px){
     .sponsor-img {
         width: 22vmax;
+    }
+    .pal-img {
+        width: 22vmin;
+    }
+    section h2 {
+        font-size: 2em;
     }
 }
